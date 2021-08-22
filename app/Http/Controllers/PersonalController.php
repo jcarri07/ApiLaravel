@@ -43,6 +43,8 @@ class PersonalController extends Controller
         $personal->cedula = $request->cedula;
         $personal->nombre = $request->nombre;
         $personal->apellido = $request->apellido;
+        $personal->sexo = $request->sexo;
+        $personal->fecha_nacimiento = $request->fecha_nacimiento;
         $personal->direccion = $request->direccion;
         $personal->cargo = $request->cargo;
         $personal->sede = $request->sede;
@@ -87,6 +89,8 @@ class PersonalController extends Controller
         $personal->cedula = $request->cedula;
         $personal->nombre = $request->nombre;
         $personal->apellido = $request->apellido;
+        $personal->sexo = $request->sexo;
+        $personal->fecha_nacimiento = $request->fecha_nacimiento;
         $personal->direccion = $request->direccion;
         $personal->cargo = $request->cargo;
         $personal->sede = $request->sede;

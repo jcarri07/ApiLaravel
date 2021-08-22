@@ -13,11 +13,13 @@ class CreatePersonalTable extends Migration
      */
     public function up()
     {
-        Schema::create('personal', function (Blueprint $table) {
+        Schema::create('personals', function (Blueprint $table) {
             $table->id();
             $table->integer('cedula');
             $table->string('nombre');
             $table->string('apellido');
+            $table->string('sexo');
+            $table->string('fecha_nacimiento');
             $table->string('direccion');
             $table->string('cargo');
             $table->string('sede');
@@ -32,6 +34,6 @@ class CreatePersonalTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('personal');
+        Schema::dropIfExists('personals');
     }
 }
